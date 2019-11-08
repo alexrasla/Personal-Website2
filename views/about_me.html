@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+
+    <!-- links and scripts -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="/js/headerFooter.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+
+</head>
+
+<style>
+    #header a {
+        color: gray;
+    }
+
+    h2,
+    p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    .writing {
+      text-align: left; 
+      margin-left: 10%; 
+      margin-right: 10%;
+        
+    }
+
+
+    .modal-content {
+        min-width: 100%;
+        min-height: 100vh;
+    }
+
+
+    .modal {
+        min-width: 80%;
+        min-height: 80%;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 10%;
+        width: 350px;
+        height: 350px;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    a img:hover {
+        opacity: 0.7;
+    }
+
+    .card-button {
+        margin-left: 40%;
+        display: inline-block;
+        border-radius: 10%;
+        background-color: rgb(147, 174, 201);
+        border: none;
+        color: rgb(100, 55, 55);
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        /* width: auto; */
+        /* transition: all 0.5s; */
+        cursor: pointer;
+        /* margin: 5px; */
+    }
+
+    .card .card-img-top {
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        width: 50%;
+        height: 70%;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+<body>
+
+    <section id="aboutme_section">
+        <div id="header"></div>
+        <h1 class="heading"> <span style="background: aliceblue;"><b>ABOUT ME </b></span></h1>
+        <hr style="width: 10%;">
+        <section style="margin-top: 7%;">
+            <div class="row">
+                <div class="col s6">
+                    <img src="/assets/IMG_4882.jpeg" style="border-radius: 10%; width: 100%; height: 100%;">
+                </div>
+                <div class="col s6">
+                    <p style=" font-size: 20px;"> <i>
+                            Hey! If you haven't alredy guessed, my name is Alex
+                            Rasla. I am currently a Junior in the process of earning a Bachelors degree in Computer
+                            Science from the
+                            Univeristy of California, Santa Barbara. I grew up in Irvine, California alongside my older
+                            brother Andrew and my younger sister Olivia.
+                            As a child, I had an obsession with computers and technology. I jailbroke and tweaked
+                            iPhones, researched how to fix my own
+                            technological issues, and had a itch to learn about the underlying mechanisms of these
+                            limitless machines.
+                            Throughout my life, I always had a creative instinct -- whether it was building structures
+                            and cars from Legos as a child, or
+                            adding my own fill while playing Elton John songs today. Coupled with my facination with
+                            computers, this combination flourished into
+                            and educational pursuit of learning about computers and software development.
+
+                        </i>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section style="background-color: cornsilk;">
+            <h1 class="heading" style=" font-size: 50px;"> <span style="background: cornsilk;"><b>PERSONAL LIFE </b></span> </h1>
+            <hr style="width: 20%;">
+
+            <div class="row" style="margin-top: 7%;">
+                <div class="col s4">
+                    <div class="card">
+                        <a data-toggle="modal" data-target="#musicModal"><img id="piano_img" class="card-img-top"
+                                src="/assets/piano.jpeg" alt="Card image" style="width: 100%;">
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title"> Music </h3>
+                            <p class="card-text">Everything listens to something. </p>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="musicModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title"> Listen </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col s6">
+                                                <video width="400" height="280" controls>
+                                                    <!-- <source src="/assets/your_song.MOV" type="video/MOV"> -->
+                                                </video>
+                                                <h4> Your Song by Elton John </h4>
+                                            </div>
+                                            <div class="col s6">
+                                                <video width="400" height="280" controls>
+                                                    <!-- <source src="/assets/imagine.MOV" type="video/MOV"> -->
+                                                </video>
+                                                <h4> Bohemian Rhapsody by Queen </h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s6">
+                                                <video width="400" height="280" controls>
+                                                    <!-- <source src="/assets/your_song.MOV" type="video/MOV"> -->
+                                                </video>
+                                                <h4> Bennie and the Jets by Elton John </h4>
+                                            </div>
+                                            <div class="col s6">
+                                                <video width="400" height="280" controls>
+                                                    <!-- <source src="/assets/imagine.MOV" type="video/MOV"> -->
+                                                </video>
+                                                <h4> Imagine by John Lennon </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card">
+                        <a data-toggle="modal" data-target="#familyModal">
+                            <img id="piano_img" class="card-img-top" src="/assets/family_life.jpg" alt="Card image"
+                                style="width: 100%;"></a>
+                        <div class="card-body">
+                            <h3 class="card-title"> Family Life </h3>
+                            <p class="card-text"> My foundation.</p>
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="familyModal" role="dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Family Life</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col s4">
+                                                <img src="/assets/grandparents.jpg" style="width: 100%; height: 100%;">
+                                            </div>
+                                            <div class="col s4">
+                                                <img src="/assets/siblings.jpg" style="width: 100%; height: 100%;">
+                                            </div>
+                                            <div class="col s4">
+                                                <img src="/assets/mama_tato.jpg" style="width: 100%; height: 100%;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <p class="writing">
+                                                        When my parents were in their early twenties, they decided to try to escape
+                                                        the communist Slovak regime and immigrate to America. After spending over a year at
+                                                        an Austrian refugee camp, they finally became eligable and landed in Houston, Texas.
+                                                        There, they each got degrees from the Univeristy of Houston. 
+                                                        A year after I was born in 1999, my parents moved to California where my father started his
+                                                        own private practice as an attourney, and my mother worked for an accounting firm. Today, my father still 
+                                                        has his practice and my mother teaches yoga at a local studio.
+                    
+                                            </p> 
+                                            <p class="writing">
+                                                I was raised in a home where homework had to be finished before
+                                                playing outside, family dinners were a mandatory, nightly routine, and electronics
+                                                had to be off by 11pm. As a family, we spent alot of time together -- whether it was planning a family outing, 
+                                                going out to dinner, or watching a movie together before bed. My siblings and I were given alot of 
+                                                freedom to explore our own interests academically and socially, but were also under a strict set of rules that bared 
+                                                consequences if we stepped out of line. My parents cared for us deeply and did everything they
+                                                could to provide opportunities for us. They taught us to speak Slovak to be able to connect to our native
+                                                culture, made us play sports to keep us phycsially active and stay out of trouble, and took us around the world for us
+                                                us to gain perspective and humility.
+                                            </p>
+                                               
+                                            </p>
+                                          
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="card">
+                        <a data-toggle="modal" data-target="#travelModal"> <img class="card-img-top"
+                                src="/assets/travel.jpeg" alt="Card image" style="width: 100%;">
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title"> Travel </h3>
+                            <p class="card-text"> Expect nothing, embrace everything. </p>
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="travelModal" role="dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Travel</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="travel"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button style="align-content: center;" type="button" class="btn btn-default"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </section>
+    <div id="footer"></div>
+</body>
+
+<script>
+    $(function () {
+        $("#travel").load("/views/travel.html");
+    });
+</script>
+
+</html>

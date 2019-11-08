@@ -1,0 +1,96 @@
+<style>
+        #footer {
+                color: black;
+                background-color: blanchedalmond;
+        }
+
+        .page-footer {
+                padding-bottom: 1px;
+        }
+
+        h2 {
+                width: 50%;
+                border-bottom: 1px solid #000;
+                line-height: 0.1em;
+                margin-top: 3%;
+                margin-left: 25%;
+                margin-bottom: 2%;
+        }
+
+        h2 span {
+                background: blanchedalmond;
+                padding: 0 10px;
+
+        }
+</style>
+
+<script src="/js/jquery.anchorScroll.js"></script>
+<script>
+
+        $('.anchor-scroll').anchorScroll({
+                scrollSpeed: 800, // scroll speed
+                offsetTop: 0, // offset for fixed top bars (defaults to 0)
+                onScroll: function () {
+                        // callback on scroll start
+                },
+                scrollEnd: function () {
+                        // callback on scroll end
+                }
+        });
+
+</script>
+
+<a id="connect_button" href="#footer" class="anchor-scroll" data-class-to="body" data-on-scroll="blur">
+        <img src="/assets/contact_logo.png" style="height: 120px; width: 120px;">
+</a>
+
+<a id="resume_button" href="#resume" data-toggle="modal" data-target="#resume">
+                <img src="/assets/resume.png" style="height: 130px; width: 150px;">
+</a>
+
+<div class="modal fade" id="resume" role="dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <!-- <div class="modal-header">
+                       
+                 <h1 class="modal-title">Alex Rasla </h1> 
+                    </div> -->
+                    <div class="modal-body" style="margin-left: 10%;">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                         <embed src="/assets/Rasla, Alex, Resume.pdf" width="90%" height="600px"/>
+                    </div>
+                </div>
+
+            </div>
+
+<div id=footer class="page-footer">
+        <h2 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;"> <span> <b> GET IN TOUCH
+                        </b></span></h2>
+        <h4 style="text-align: center;"> Email works best. </h4>
+        <div class="row" style="text-align: center;">
+                <div class="col s3">
+                        <img src="/assets/phone.png" style="width: 100px; height: 100px;">
+                        <h4>+1(949) 748-9505 </h4>
+                </div>
+                <div class="col s3">
+                        <img src="/assets/mail.png" style="width: 100px; height: 100px;">
+                        <h4> alex.rasla@me.com </h4>
+                </div>
+                <div class="col s3">
+                        <form action="https://www.linkedin.com/in/alex-rasla-53899b159/" target="_blank">
+                                <button type="submit" style="background-color: transparent; border: none;">
+                                        <img src="/assets/linkedin_logo.png" style="width: 100px; height: 100px;">
+                                </button>
+                        </form>
+                </div>
+                <div class="col s3">
+                        <form action="https://www.facebook.com/alex.rasla" target="_blank">
+                                <button type="submit" style="background-color: transparent; border: none;">
+                                        <img src="/assets/facebook_logo.png" style="width: 100px; height: 100px;">
+                                </button>
+                        </form>
+                </div>
+
+        </div>
+</div>

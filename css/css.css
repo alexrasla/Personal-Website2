@@ -1,0 +1,109 @@
+body {
+    border: 1px solid transparent;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/profile_thumbnail.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+} 
+
+#welcome_message {
+    margin-top: 150px;
+    margin-left: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 65px;
+    color: white;
+    text-align: center;   
+}
+
+#introduction_section {
+    background-color: cornsilk;
+}
+#introduction {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#projects_section {
+    background-color: aliceblue;
+}
+#experiences_section {
+    background-color: cornsilk;
+}
+
+
+.row {
+    margin-right: 10%;
+    margin-left: 10%;
+    max-width: 100%;
+}
+
+#aboutme_section{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: aliceblue;
+    background-size: 100%;
+}
+
+
+.content_divider {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+hr {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+section {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-size: 100%; 
+    height:100vh;
+    width: 100vw;
+    display: table;
+
+}
+section div {
+    text-align: center;
+    position: relative;
+}
+
+.video {
+    height: 720px;
+}
+
+#connect_button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+}
+
+#resume_button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+}
+
+.heading {
+    width: 70%; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin-top: 3%;
+    margin-left: 15%;
+   
+ } 
+ 
+ h1 span { 
+     padding:0 10px; 
+ }

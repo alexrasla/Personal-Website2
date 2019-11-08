@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/css.css">
+   <!-- needed for navbar but messing it up -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    a {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+</style>
+
+<script src="/js/jquery.anchorScroll.js"></script>
+<script>
+
+$('.anchor-scroll').anchorScroll({
+        scrollSpeed: 800, // scroll speed
+        offsetTop: 0, // offset for fixed top bars (defaults to 0)
+        onScroll: function () {
+            // callback on scroll start
+        },
+        scrollEnd: function () {
+            // callback on scroll end
+        }
+    });
+    
+</script>
+
+<body>
+    
+<div class="container-fluid">
+    <ul class="nav navbar-nav" style="float: right;">
+        <li class="active"><a href="/index.html">Home</a></li>
+        <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Projects <span
+                    class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a data-target="#nav_sb" data-toggle="modal" >NavSB</a></li>
+                <li><a data-target="#facefilter" data-toggle="modal" >Face Filter </a></li>
+            </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Experiences <span
+                    class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="https://wimet.co/" target="_blank">Wimet</a></li>
+                <li><a href="https://www.navco.com/" target="_blank"> NAVCO </a></li>
+            </ul>
+        </li> -->
+        <li><a href="http://www.alexrasla.com/index.html#projects_section"> Projects </a></li>
+        <li><a href="http://www.alexrasla.com/index.html#experiences_section"> Experiences </a></li>
+        <li><a href="http://www.alexrasla.com/views/about_me.html"> About Me </a></li>
+        <!-- <li><a href="#footer" class="anchor-scroll"> Connect </a></li> -->
+
+    </ul>
+</div>
